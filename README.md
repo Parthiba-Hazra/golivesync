@@ -18,7 +18,7 @@ The `handlers` package handles HTTP requests and WebSocket connections, providin
 - WebSocket connections for room management, chat, and viewers
 - Handling video streaming using WebRTC
 
-## `chat` Package
+## `customchat` Package
 
 The `chat` package manages real-time chat functionality within streaming rooms.
 
