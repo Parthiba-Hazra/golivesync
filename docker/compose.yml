@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  server:
+    image: golivesync
+    deploy:
+      replicas: 1
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200m"
+        max-file: "10"
+    ports:
+      - "8000:8000"
+    command: ["--addr", ":8000"]
+
+# add more services or configurations if needed
